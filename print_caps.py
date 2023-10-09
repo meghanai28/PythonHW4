@@ -1,5 +1,12 @@
 def allcaps (f):
     def inner():
-        print(f().lower())
+        val = f()
+        if(isinstance(val,list)):
+            for i in range(len(val)):
+                if(isinstance(val[i],str)):
+                    val[i] = val[i].upper()
+            print(val)
+        if(isinstance(val,str)):
+            print(val.upper())
    
     return inner
