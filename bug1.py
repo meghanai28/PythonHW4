@@ -33,11 +33,4 @@ class Circle(Base):
 
 
     def shape(self):
-        return super().shape() + " circle"
-
-def main():
-    c = Circle(1, 2, 3)
-    print(c.shape())
-    print(c.draw())
-
-main()
+        return "This is a circle"
