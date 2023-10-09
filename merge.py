@@ -1,6 +1,6 @@
 def merge_list(l1, l2):
     if(not isinstance(l1,list) or not isinstance(l2,list)):
-        raise TypeError
+        raise TypeError()
     
     l1.extend(l2)
     
