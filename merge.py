@@ -3,6 +3,9 @@ def merge_list(l1, l2):
         raise TypeError()
     
     l1.extend(l2)
+    for i in l1:
+        if(not isinstance(i,int)):
+                raise TypeError()
     
     for i in range(len(l1)):
         for j in range(i,0,-1):
