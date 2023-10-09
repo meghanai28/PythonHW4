@@ -1,4 +1,4 @@
-def climbStairs(n):
+def my_steps(n):
         
         if(n<1 or n>25):
             raise ValueError()
