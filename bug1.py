@@ -6,7 +6,7 @@ class Base:
         self.size = size
 
     def shape(self):
-        return "This is a"
+        return "This is a shape"
         
     def draw(self):
         return ""
@@ -33,7 +33,7 @@ class Circle(Base):
 
 
     def shape(self):
-        return super().shape() + " circle"
+        return "This is a circle"
 
 def main():
     c = Circle(1, 2, 3)
