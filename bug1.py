@@ -4,10 +4,10 @@ class Base:
         self.x = x
         self.y = y
         self.size = size
-        self.shp = shape
+        self.shape = shape
 
     def shape(self):
-        return self.shp
+        return self.shape
         
     def draw(self, string):
         return string
@@ -33,5 +33,12 @@ class Circle(Base):
 
 
 
-    def shape(self):
+    def get_shape(self):
         return super().shape()
+
+def main():
+    c = Circle(1, 2, 3)
+    print(c.get_shape())
+    print(c.draw())
+
+main()
