@@ -1,6 +1,4 @@
 def allcaps (f):
     def inner():
-        str = f()
-        str = str.upper()
-        print(str)
+        print(f().upper())
     return inner
