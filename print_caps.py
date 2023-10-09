@@ -7,4 +7,6 @@ def allcaps (f):
             for i in range(len(val)):
                 if(isinstance(val[i],str)):
                     val[i] = val[i].upper()
+            print(val)
+   
     return inner
