@@ -1,20 +1,19 @@
 class Base:
     
-    def __init__(self, x, y, size, shape):
+    def __init__(self, x, y, size):
         self.x = x
         self.y = y
         self.size = size
-        self.shape = shape
 
     def shape(self):
-        return self.shape
+        return "This is a"
         
-    def draw(self, string):
-        return string
+    def draw(self):
+        return ""
 
 class Circle(Base):
     def __init__(self, x, y, size):
-        super().__init__(x, y, size, "This is a circle")
+        super().__init__(x, y, size)
 
     def draw(self):
         return f"""({self.x}, {self.y})\n{self.size}
@@ -33,12 +32,12 @@ class Circle(Base):
 
 
 
-    def get_shape(self):
-        return super().shape()
+    def shape(self):
+        return super().shape() + " circle"
 
 def main():
     c = Circle(1, 2, 3)
-    print(c.get_shape())
+    print(c.shape())
     print(c.draw())
 
 main()
