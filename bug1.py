@@ -6,6 +6,9 @@ class Base:
 
     def shape(self):
         return "This is a"
+        
+    def draw(self):
+        return ""
 
 class Circle(Base):
     def __init__(self, x, y, size):
@@ -30,4 +33,4 @@ class Circle(Base):
 
 
     def shape(self):
-        return "This is a circle"
+        return super().shape() +" circle"
