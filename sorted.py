@@ -1,4 +1,4 @@
-def sort_dictionary(dict):
+def reverse_sort_dictionary(dict):
     key = list(dict.keys())
     key.sort()
     ans = []
